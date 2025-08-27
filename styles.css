@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     min-height: 100vh;
+    background: #f5f7fa;
 }
 
 /* Contenedor principal */
@@ -22,31 +23,20 @@ body {
 /* Tarjeta del CV */
 .cv-card {
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     overflow: hidden;
     margin: 20px 0;
-    backdrop-filter: blur(10px);
 }
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    background: linear-gradient(rgba(30, 64, 175, 0.85), rgba(30, 64, 175, 0.85)), 
+                url('https://web-assets.esetstatic.com/tn/-x700/wls/2023/2023-12/desarrollo-software.jpeg') center/cover;
     color: white;
     padding: 40px;
     text-align: center;
     position: relative;
-}
-
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><polygon fill="rgba(255,255,255,0.1)" points="0,0 1000,0 1000,60 0,100"/></svg>');
-    background-size: cover;
 }
 
 .profile-img {
@@ -60,27 +50,24 @@ body {
     justify-content: center;
     font-size: 60px;
     color: #666;
-    position: relative;
-    z-index: 1;
+    border: 4px solid white;
 }
 
 .name {
     font-size: 2.5em;
     margin-bottom: 10px;
-    position: relative;
-    z-index: 1;
+    font-weight: 600;
 }
 
 .title {
     font-size: 1.2em;
-    opacity: 0.9;
-    position: relative;
-    z-index: 1;
+    opacity: 0.95;
+    font-weight: 300;
 }
 
 /* Información de contacto */
 .contact-info {
-    background: #f8f9fa;
+    background: #f8fafc;
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -90,19 +77,28 @@ body {
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    padding: 8px 0;
 }
 
 .contact-icon {
-    width: 20px;
-    height: 20px;
-    background: #3498db;
-    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #3b82f6;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
+    flex-shrink: 0;
+    padding: 4px;
+}
+
+.contact-icon img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
 }
 
 /* Contenido principal */
@@ -116,62 +112,127 @@ body {
 
 .section-title {
     font-size: 1.8em;
-    color: #2c3e50;
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 10px;
+    color: #1e40af;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 8px;
     margin-bottom: 25px;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background: #e74c3c;
+    font-weight: 600;
 }
 
 /* Items de experiencia y educación */
 .experience-item, 
 .education-item {
-    background: #f8f9fa;
+    background: #f8fafc;
     padding: 25px;
     margin-bottom: 20px;
-    border-radius: 15px;
-    border-left: 5px solid #3498db;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    border-left: 4px solid #3b82f6;
+    transition: all 0.3s ease;
 }
 
 .experience-item:hover, 
 .education-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background: #f1f5f9;
+    border-left-color: #1d4ed8;
 }
 
 .item-title {
     font-size: 1.3em;
-    font-weight: bold;
-    color: #2c3e50;
+    font-weight: 600;
+    color: #1e40af;
     margin-bottom: 5px;
 }
 
 .item-company, 
 .item-institution {
-    color: #3498db;
-    font-weight: 600;
+    color: #3b82f6;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
 .item-date {
-    color: #666;
+    color: #64748b;
     font-size: 0.9em;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .item-description {
-    color: #555;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* Proyectos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+.project-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 8px;
+}
+
+.project-tech {
+    color: #64748b;
+    font-size: 0.9em;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.project-description {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.project-features {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.project-features li {
+    color: #475569;
+    padding: 2px 0;
+    font-size: 0.9em;
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+.project-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: 1px solid #3b82f6;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: #3b82f6;
+    color: white;
 }
 
 /* Habilidades */
@@ -182,45 +243,50 @@ body {
 }
 
 .skill-category {
-    background: #f8f9fa;
+    background: #f8fafc;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 8px;
     text-align: center;
+    border: 1px solid #e2e8f0;
 }
 
 .skill-category h4 {
-    color: #2c3e50;
+    color: #1e40af;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .skill-tag {
     display: inline-block;
-    background: #3498db;
+    background: #3b82f6;
     color: white;
-    padding: 5px 15px;
-    border-radius: 25px;
+    padding: 6px 12px;
+    border-radius: 16px;
     margin: 3px;
-    font-size: 0.9em;
+    font-size: 0.85em;
+    font-weight: 500;
 }
 
 /* Botón de descarga */
 .download-btn {
-    background: #00a3ee;
+    background: #3b82f6;
     color: white;
     padding: 15px 30px;
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
     font-size: 1.1em;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     display: block;
     margin: 30px auto;
     text-decoration: none;
     text-align: center;
+    font-weight: 500;
 }
 
 .download-btn:hover {
-    transform: scale(1.05);
+    background: #1d4ed8;
+    transform: translateY(-2px);
 }
 
 /* Animaciones */
@@ -265,6 +331,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
     .profile-img {
         width: 120px;
         height: 120px;
@@ -273,6 +343,10 @@ body {
 
     .section-title {
         font-size: 1.5em;
+    }
+
+    .project-links {
+        flex-direction: column;
     }
 }
 
@@ -294,7 +368,16 @@ body {
     }
 
     .experience-item, 
-    .education-item {
+    .education-item,
+    .project-card {
         padding: 20px;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+
+    .skill-category {
+        padding: 15px;
     }
 }

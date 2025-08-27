@@ -1,169 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Camilo Andres Olea Aguirre</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="cv-card fade-in">
-        <div class="header">
-          <img src="./assets/imagen.jpg" alt="" class="profile-img"></img>
-          <h1 class="name">Camilo Andres Olea Aguirre</h1>
-          <p class="title">Desarrollador Full Stack</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camilo Andres Olea Aguirre</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="cv-card fade-in">
+      <div class="header">
+        <img src="./assets/foto.jpg" alt="" class="profile-img"></img>
+        <h1 class="name">Camilo Andres Olea Aguirre</h1>
+        <p class="title">Desarrollador Full Stack</p>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <span>camiloolea200@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <span>+57 320 411 6945</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <span>Montelibano - Cordoba, Colombia</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <span>www.linkedin.com/in/camilo-andres-olea-aguirre-b6ab981ab</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <span>github.com/camiloolea20077?tab=repositories</span>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="section">
+          <h2 class="section-title">Perfil Profesional</h2>
+          <p>
+            Desarrollador Full Stack con experiencia en la construcción de
+            aplicaciones escalables basadas en microservicios y micro
+            frontends. Dominio en frontend con Angular y backend con Java
+            Spring Boot, aplicando principios de arquitectura hexagonal,
+            buenas prácticas de desarrollo y pruebas unitarias. Experto en
+            modelado y optimización de bases de datos relacionales y no
+            relacionales, con experiencia en integración de servicios
+            distribuidos y tecnologías de autenticación avanzada como
+            reconocimiento facial. Orientado a la resolución de problemas, la
+            eficiencia y la creación de soluciones de alto impacto.
+          </p>
         </div>
 
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">📧</div>
-            <span>camiloolea200@gmail.com</span>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📱</div>
-            <span>+57 320 411 6945</span>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <span>Montelibano - Cordoba, Colombia</span>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">💼</div>
-            <span
-              >www.linkedin.com/in/camilo-andres-olea-aguirre-b6ab981ab</span
-            >
+        <div class="section">
+          <h2 class="section-title">Proyectos Destacados</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3 class="project-title">AgroSuite</h3>
+              <p class="project-tech">Angular 16 • Java Spring Boot • PostgreSQL • PrimeNG</p>
+              <p class="project-description">
+                Plataforma integral para la gestión agropecuaria que incluye control de
+                nacimientos, ganado, empleados, usuarios y más. Sistema completo con
+                frontend y backend separados.
+              </p>
+              <ul class="project-features">
+                <li>• Gestión completa de ganado</li>
+                <li>• Control de nacimientos</li>
+                <li>• Administración de empleados</li>
+                <li>• Sistema de usuarios y permisos</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/camiloolea20077/agrosuite" class="project-link" target="_blank">Código</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">Eco Envíos</h3>
+              <p class="project-tech">Angular • Node.js • API Integration</p>
+              <p class="project-description">
+                Sistema de gestión de envíos ecológicos con enfoque en sostenibilidad
+                y optimización de rutas para reducir el impacto ambiental.
+              </p>
+              <ul class="project-features">
+                <li>• Gestión de envíos ecológicos</li>
+                <li>• Optimización de rutas</li>
+                <li>• Seguimiento en tiempo real</li>
+                <li>• Dashboard administrativo</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/camiloolea20077/eco-enviios" class="project-link" target="_blank">Código</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">E-commerce App</h3>
+              <p class="project-tech">Angular 16 • TypeScript • CSS3</p>
+              <p class="project-description">
+                Aplicación de comercio electrónico completa desarrollada con Angular CLI,
+                con interfaz moderna y experiencia de usuario optimizada.
+              </p>
+              <ul class="project-features">
+                <li>• Carrito de compras dinámico</li>
+                <li>• Catálogo de productos</li>
+                <li>• Interfaz responsive</li>
+                <li>• Gestión de estados</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/camiloolea20077/ecommerce-app" class="project-link"
+                  target="_blank">Código</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="content">
-          <div class="section">
-            <h2 class="section-title">Perfil Profesional</h2>
-            <p>
-              Desarrollador Full Stack con experiencia en la construcción de
-              aplicaciones escalables basadas en microservicios y micro
-              frontends. Dominio en frontend con Angular y backend con Java
-              Spring Boot, aplicando principios de arquitectura hexagonal,
-              buenas prácticas de desarrollo y pruebas unitarias. Experto en
-              modelado y optimización de bases de datos relacionales y no
-              relacionales, con experiencia en integración de servicios
-              distribuidos y tecnologías de autenticación avanzada como
-              reconocimiento facial. Orientado a la resolución de problemas, la
-              eficiencia y la creación de soluciones de alto impacto.
-            </p>
-          </div>
+        <div class="section">
+          <h2 class="section-title">Experiencia Profesional</h2>
 
-          <div class="section">
-            <h2 class="section-title">Experiencia Profesional</h2>
-
-            <div class="experience-item">
-              <div class="item-title">Desarrollador Full Stack</div>
-              <div class="item-company">Tecnologia Sinergia S.A.S</div>
-              <div class="item-date">Agosto 2024 - Presente</div>
-              <div class="item-description">
-                Análisis y desarrollo de proyectos basados en arquitecturas
-                modernas como micro frontends y microservicios, aplicando
-                principios de escalabilidad, mantenibilidad y eficiencia.
-                Experiencia en el diseño e implementación de sistemas
-                distribuidos, integrando distintos módulos de manera desacoplada
-                y colaborativa. Participación activa en la implementación de
-                tecnologías de reconocimiento facial, incorporadas en flujos
-                críticos del sistema para mejorar procesos de autenticación y
-                seguridad. Manejo de bases de datos relacionales y no
-                relacionales, con capacidad para diseñar modelos de datos
-                eficientes y optimizar consultas de alto volumen. Dominio en el
-                desarrollo frontend con Angular, aplicando buenas prácticas de
-                diseño de interfaces, reutilización de componentes y consumo
-                eficiente de servicios. En el backend, experiencia sólida con
-                Java Spring Boot, siguiendo principios de arquitectura
-                hexagonal, pruebas unitarias y separación de responsabilidades.
-              </div>
-            </div>
-
-            <div class="experience-item">
-              <div class="item-title">Desarrollador Full Stack</div>
-              <div class="item-company">Desarrollador Freelance</div>
-              <div class="item-date">Febrero 2022 - Diciembre 2023</div>
-              <div class="item-description">
-                Amplio dominio en desarrollo frontend utilizando Angular, con
-                experiencia en la construcción de componentes reutilizables,
-                manejo avanzado de formularios reactivos, ruteo, consumo de
-                servicios y técnicas de optimización de rendimiento. En el
-                backend, sólida experiencia con Java Spring Boot, aplicando
-                principios de arquitectura hexagonal, buenas prácticas de
-                desacoplamiento, inyección de dependencias y pruebas unitarias.
-                Experiencia comprobada en el diseño, desarrollo y consumo de
-                APIs RESTful, así como en la integración de servicios
-                distribuidos mediante patrones de comunicación robustos entre
-                microservicios. Conocimientos avanzados en bases de datos
-                relacionales como PostgreSQL, utilizando ORMs como Hibernate,
-                así como nociones aplicadas en bases de datos no relacionales.
-                Competente en el modelado de datos y la optimización de
-                consultas para entornos de alto rendimiento.
-              </div>
+          <div class="experience-item">
+            <div class="item-title">Desarrollador Full Stack</div>
+            <div class="item-company">Tecnologia Sinergia S.A.S</div>
+            <div class="item-date">Agosto 2024 - Presente</div>
+            <div class="item-description">
+              Desarrollo de aplicaciones basadas en arquitecturas de microservicios y micro frontends. Implementación de
+              sistemas distribuidos con tecnologías de reconocimiento facial para autenticación y seguridad. Trabajo con
+              bases de datos relacionales y no relacionales, desarrollo frontend con Angular y backend con Java Spring
+              Boot aplicando arquitectura hexagonal y pruebas unitarias.
             </div>
           </div>
 
-          <div class="section">
-            <h2 class="section-title">Educación</h2>
-
-            <div class="education-item">
-              <div class="item-title">Ingeniero de software y datos</div>
-              <div class="item-institution">
-                Institucion Universitaria Digital De Antioquia
-              </div>
-              <div class="item-date">2020 - 2025</div>
+          <div class="experience-item">
+            <div class="item-title">Desarrollador Full Stack</div>
+            <div class="item-company">Desarrollador Freelance</div>
+            <div class="item-date">Febrero 2022 - Diciembre 2023</div>
+            <div class="item-description">
+              Desarrollo frontend con Angular enfocado en componentes reutilizables, formularios reactivos y
+              optimización de rendimiento. Backend con Java Spring Boot aplicando principios de arquitectura hexagonal.
+              Diseño y consumo de APIs RESTful, integración de microservicios, y trabajo con bases de datos PostgreSQL
+              usando Hibernate.
             </div>
           </div>
+        </div>
 
-          <div class="section">
-            <h2 class="section-title">Habilidades</h2>
+        <div class="section">
+          <h2 class="section-title">Educación</h2>
 
-            <div class="skills-grid">
-              <div class="skill-category">
-                <h4>Técnicas</h4>
-                <span class="skill-tag">MicroFrontends</span>
-                <span class="skill-tag">Angular</span>
-                <span class="skill-tag">Metologias Ágiles</span>
-                <span class="skill-tag">Java Spring Boot</span>
-                <span class="skill-tag">APIs RESTful</span>
-                <span class="skill-tag">Bases de Datos SQL y NoSQL</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">Git y Control de Versiones</span>
-                <span class="skill-tag">Pruebas Unitarias</span>
-              </div>
+          <div class="education-item">
+            <div class="item-title">Ingeniero de software y datos</div>
+            <div class="item-institution">
+              Institucion Universitaria Digital De Antioquia
+            </div>
+            <div class="item-date">2020 - 2025</div>
+          </div>
+        </div>
 
-              <div class="skill-category">
-                <h4>Blandas</h4>
-                <span class="skill-tag">Liderazgo</span>
-                <span class="skill-tag">Comunicación</span>
-                <span class="skill-tag">Trabajo en Equipo</span>
-                <span class="skill-tag">Resolución de Problemas</span>
-                <span class="skill-tag">Adaptabilidad</span>
-                <span class="skill-tag">Pensamiento Crítico</span>
-                <span class="skill-tag">Gestión del Tiempo</span>
-              </div>
+        <div class="section">
+          <h2 class="section-title">Habilidades</h2>
 
-              <div class="skill-category">
-                <h4>Lenguajes</h4>
-                <span class="skill-tag">Angular</span>
-                <span class="skill-tag">Java Spring Boot</span>
-                <span class="skill-tag">HTML5</span>
-                <span class="skill-tag">CSS3</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">NoSQL</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Tailwind</span>
-              </div>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Técnicas</h4>
+              <span class="skill-tag">MicroFrontends</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Metologias Ágiles</span>
+              <span class="skill-tag">Java Spring Boot</span>
+              <span class="skill-tag">APIs RESTful</span>
+              <span class="skill-tag">Bases de Datos SQL y NoSQL</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git y Control de Versiones</span>
+              <span class="skill-tag">Pruebas Unitarias</span>
+            </div>
+
+            <div class="skill-category">
+              <h4>Blandas</h4>
+              <span class="skill-tag">Liderazgo</span>
+              <span class="skill-tag">Comunicación</span>
+              <span class="skill-tag">Trabajo en Equipo</span>
+              <span class="skill-tag">Resolución de Problemas</span>
+              <span class="skill-tag">Adaptabilidad</span>
+              <span class="skill-tag">Pensamiento Crítico</span>
+              <span class="skill-tag">Gestión del Tiempo</span>
+            </div>
+
+            <div class="skill-category">
+              <h4>Lenguajes</h4>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Java Spring Boot</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">NoSQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Tailwind</span>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  </body>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+
 </html>
